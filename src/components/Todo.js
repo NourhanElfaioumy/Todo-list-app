@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Row, Modal, Button, Form, Input, Col, DatePicker, Select } from "antd";
+import { Row, Modal, Button, Form, Input, Col, Select } from "antd";
 import "../css/Todo.css";
 import { useDispatch, useSelector } from "react-redux";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
@@ -144,8 +144,9 @@ export default function Todo(props) {
               <span className="card-header">Title :{todo.title}</span>
               <p className="mt-3"> Description : {todo.description}</p>
 
-              <p className="mt-3"> Start Date :{todo.startDate}</p>
+              <p className="mt-3 "> Start Date :{todo.startDate}</p>
               <p className="mt-3"> End Date :{todo.endDate}</p>
+              <p className="mt-3"> Responsible Person : {todo.person}</p>
 
               <div className="icons">
                 <i

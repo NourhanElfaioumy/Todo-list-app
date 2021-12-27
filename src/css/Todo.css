@@ -25,10 +25,11 @@
   border-radius: 10px !important;
   margin-top: 10px;
   margin-bottom: 10px !important;
-  max-width: 80px;
+  max-width: 150px;
   height: 30px;
   padding: 1px 1px !important;
   text-align: center;
+  font-weight: 800;
 }
 .task-holder {
   width: 100%;
@@ -52,4 +53,7 @@
 .fa-trash-alt {
   color: #041525;
   cursor: pointer;
+}
+.task-holder > p {
+  font-weight: 700;
 }

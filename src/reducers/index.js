@@ -17,10 +17,9 @@ export default function reducer(state = initialState, action) {
       };
     case Remove_Task:
       const removeTodoList = state.todos.filter(
-        (task) => task.id !== action.id
+        (task) => task.id !== action.payload
       );
 
-      // const removeTodoList = [...state.todos, { ...action.payload }];
       return {
         ...state,
         removeTodoList,
